@@ -5,7 +5,7 @@ array = ['a','b','c','d']
 
 for letter in array:
     fileName = letter + '.txt'
-    open(fileName, "x")
+    open(fileName, 'x')
     
     if not os.path.exists(fileName):
         raise Exception('text file ' + fileName + 'was not created')
