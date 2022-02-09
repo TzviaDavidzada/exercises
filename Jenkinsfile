@@ -2,7 +2,7 @@ node() {
 	def myImg
 	stage("Build image") {
 		checkout scm
-		
-		myImg = docker.build 'zip-job:$BUILD_NUMBER'
+	
+		myImg = docker.build 'zip-job:1'
 	}
 }
