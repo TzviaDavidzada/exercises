@@ -5,7 +5,8 @@ ENV VERSION 1.2
 #RUN sudo yum update \ 
 #	sudo dnf install python3 
 
-RUN yum -y install python-pip && yum clean all \
+RUN yum update -y \ 
+	yum install -y python3 \
     yum install zip unzip
 
 COPY ./zip_job.py /tmp
