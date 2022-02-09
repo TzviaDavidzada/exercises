@@ -7,7 +7,7 @@ node() {
 		myImg.inside() {
 			sh "ls /tmp"
 			sh "python /tmp/zip_job.py"
-			sh "ls /tmp"
+			sh "ls"
 		}
 	}
 }
