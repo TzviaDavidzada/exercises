@@ -1,6 +1,6 @@
 FROM centos:7
 
-VERSION 1.2.0 
+ENV VERSION 1.2
 
 #RUN sudo yum update \ 
 #	sudo dnf install python3 
