@@ -10,8 +10,8 @@ for letter in array:
     if not os.path.exists(fileName):
         raise Exception('text file ' + fileName + 'was not created')
     
-    # TODO os.environ.get('VERSION')
-    VERSION = "1.2"
+    # TODO 
+    VERSION = os.environ.get('VERSION')
     zipName = letter + '_' + VERSION + '.zip'
     with ZipFile(zipName, 'w') as zipObj:
         zipObj.write(fileName)

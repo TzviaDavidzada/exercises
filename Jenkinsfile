@@ -1,8 +1,7 @@
 node() {
-	def myImg
 	stage("Build image") {
 		checkout scm
-		myImg = docker.build 'zip-job:1'
+		def myImg = docker.build 'zip-job:1'
 		
 		myImg.inside() {
 			sh "ls /tmp"
